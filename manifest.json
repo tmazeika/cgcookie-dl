@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "CGCookie Downloader",
+  "version": "1.0.0",
+  "description": "Downloads CGCookie videos.",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "<all_urls>",
+    "*://localhost/*",
+    "*://*.wistia.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/border-48.png",
+    "default_title": "Download"
+  },
+  "background": {
+    "scripts": ["bg.js"]
+  }
+}
